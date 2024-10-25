@@ -1,8 +1,10 @@
+import HomePage from "./homPage.component";
+import { Header } from "./Header/Header";
 function App() {
   return (
     <>
-      <div className="bg-red-500 ">hello react</div>
-      <h1>test react dom</h1>
+      <Header />
+      <HomePage />
     </>
   );
 }
