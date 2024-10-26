@@ -1,5 +1,5 @@
-import HomePage from "./homPage.component";
-import { Header } from "./Header/Header";
+import HomePage from "./pages/homepage/homepage";
+import { Header } from "./pages/header/Header";
 function App() {
   return (
     <>
