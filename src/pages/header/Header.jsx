@@ -1,11 +1,11 @@
 import { Link, useNavigate } from "react-router-dom";
-const Pay = () => {
-  useNavigate("/payment");
-};
 export const Header = () => {
   const navigate = useNavigate();
   const toPayment = () => {
     navigate("/payment");
+  };
+  const toShop = () => {
+    navigate("/shop");
   };
   return (
     <div className="content-center">
@@ -13,12 +13,15 @@ export const Header = () => {
         Header
       </h1>
       <div className="flex flex-row justify-between">
-        <Link className="bg-green-400 " to="/hats">
+        <Link className="bg-green-400 " to="shop/hats">
           hat page
         </Link>
         <Link className="bg-yellow-300" to="/checkout">
           checkout page
         </Link>
+        <p className="bg-yellow-900" onClick={toShop}>
+          shop page
+        </p>
         <h1 className="red" onClick={toPayment}>
           to payment page
         </h1>
